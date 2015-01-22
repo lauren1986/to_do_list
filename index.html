@@ -14,36 +14,26 @@
       <h3>Items Remaining: 2</h3>
 
       <form>
-        <input type="text" name="todo" placeholder="Add a new text item...">
+        <input class="form_control"type="text" name="todo" placeholder="Add a new text item..." />
+          <span class="input-group-btn">
+                <!--Button to add the text-->
+                <button id="add-item" class="btn btn-default">Add</button>
+            </span>
       </form>
 
-      <table>
+      <table id="tableList" class="table">
+        <thead>
         <tr>
           <th class="three_fifths left-align">Description</th>
           <th class="one_fifth right-align">Completed</th>
           <th class="one_fifth right-align">Removed</th>
         </tr>
-        <tr class="lightgrey">
-          <td class="left-align">Practice adding JS Handlers</td>
-          <td class="right-align"><input type="checkbox" name ="chk1_1" /></td>
-          <td class="right-align"><input type="checkbox" name ="chk1_2" /></td>
+        </thead>
+        <tbody id="Body">
+        <tr>
+          <!--Rows will be added here-->
         </tr>
-        <tr class="white">
-          <td class="left-align">Adding elements to DOM</td>
-          <td class="right-align"><input type="checkbox" name ="chk2_1" /></td>
-          <td class="right-align"><input type="checkbox" name ="chk2_2" /></td>
-        </tr>
-	    <tr class="lightgrey">
-          <td class="left-align">Update text in the DOM</td>
-          <td class="right-align"><input type="checkbox" name ="chk3_1" /></td>
-          <td class="right-align"><input type="checkbox" name ="chk3_2" /></td>
-        </tr>
-        <tr class="white">
-          <td class="left-align">Update text in the DOM</td>
-          <td class="right-align"><input type="checkbox" name ="chk4_1" /></td>
-          <td class="right-align"><input type="checkbox" name ="chk4_2" /></td>
-        </tr>
-
+        </tbody>
       </table>
 
     </div>
